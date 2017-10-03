@@ -2,21 +2,23 @@ import { Meteor } from 'meteor/meteor';
 import React, { Component } from  'react';
 import AutoForm from 'uniforms-bootstrap3/AutoForm';
 import {SubmitField} from 'uniforms-bootstrap3';
-import RegisterSchema from './schemas/RegisterSchema';
-import route from '/imports/routing/router.js';
+import LoginSchema from './schemas/LoginSchema.js';
 
 export default class LoginForm extends Component {
 
+
     render(){
         const CustomSubmitField = props =>
-            <SubmitField value="Register" />;
+            <SubmitField value="Login" />;
 
         return (
             <div>
-                <h2>Register Form</h2>
-                <AutoForm schema={RegisterSchema} placeholder={true}
+                <h2>Login Form</h2>
+                <AutoForm schema={LoginSchema} placeholder={true}
                           submitField={CustomSubmitField}
-                          onSubmit={(data) => Meteor.call('user.register', data)}>
+                          onSubmit={console.log("CEVA")}>
+
+                    <h2>HI POSTS</h2>
                 </AutoForm>
             </div>
         )
