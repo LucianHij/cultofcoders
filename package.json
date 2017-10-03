@@ -16,6 +16,7 @@
     "simpl-schema": "^0.3.2",
     "uniforms": "^1.21.0",
     "uniforms-bootstrap3": "^1.21.0",
-    "uniforms-bootstrap4": "^1.21.0"
+    "uniforms-bootstrap4": "^1.21.0",
+    "uniforms-semantic": "^1.21.0"
   }
 }
