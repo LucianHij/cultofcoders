@@ -22,7 +22,7 @@ cultofcoders:meteor-react-routing
 alanning:roles
 accounts-base
 accounts-password
-aldeed:simple-schema
 check
 aldeed:collection2-core
-aldeed:collection2
+react-meteor-data
+session

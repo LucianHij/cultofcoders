@@ -1,4 +1,3 @@
-import route from '/imports/routing/router.js';
 import { Meteor } from 'meteor/meteor';
 
 Meteor.methods({
@@ -17,8 +16,5 @@ Meteor.methods({
             email: data.email,
             password: data.password
         });
-
-        route.go('/post/list');
     }
-
 });
